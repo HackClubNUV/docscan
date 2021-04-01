@@ -34,7 +34,7 @@ def four_point_transform(image, pts):
         [maxHeight - 1, maxHeight - 1],
         [0, maxHeight -1]], dtype = "float32")
 
-    #M = cv2.getPerspectiveTransform(rect, dst)
+    M = cv2.getPerspectiveTransform(rect, dst)
     #warped = cv2.warpPerspective(image, M, (maxWidth, maxHeight))
 
     #return warped
