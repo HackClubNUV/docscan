@@ -12,3 +12,5 @@ args = vars(ap.parse_args())
 
 image = cv2.imreaad(args["image"])
 ratio = image.shape[0] / 500.0
+orig = image.copy()
+image = imutils.resize(image, height = 500)
