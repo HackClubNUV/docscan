@@ -42,7 +42,7 @@ cv2.imshow("Outline", image)
 cv2.waitkey(0)
 cv2.destroyAllWindows()
 
-#warped = four_point_transform(orig, screenCnt.reshape(4, 2) * ratio)
+warped = four_point_transform(orig, screenCnt.reshape(4, 2) * ratio)
 
 #warped = cv2.cvtColor(warped, cv2.COLOR_BG2GRAY)
 #T = threshold_local(warped, 11, offset = 10, method = "gaussian")
