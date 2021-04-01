@@ -45,7 +45,7 @@ cv2.destroyAllWindows()
 warped = four_point_transform(orig, screenCnt.reshape(4, 2) * ratio)
 
 warped = cv2.cvtColor(warped, cv2.COLOR_BG2GRAY)
-#T = threshold_local(warped, 11, offset = 10, method = "gaussian")
+T = threshold_local(warped, 11, offset = 10, method = "gaussian")
 #warped = (warped > T).astype("uint8") * 255
 
 #print("STEP 3: Apply Perspective Transform")
