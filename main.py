@@ -28,3 +28,9 @@ cv2.destroyAllWindows()
 cnts = cv2.findContours(edged.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 cnts = imutils.grab_contours(cnts)
 cnts = sorted(cnts, key = cv2.contourArea, reverse = True)[:5]
+
+for c in cnts:
+    peri = cv2.arcLength(c, True)
+    approx = cv2.approxPolyDP(c, 0.02 * peri, True)
+
+    
