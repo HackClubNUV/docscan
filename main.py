@@ -42,4 +42,15 @@ cv2.imshow("Outline", image)
 cv2.waitkey(0)
 cv2.destroyAllWindows()
 
+#warped = four_point_transform(orig, screenCnt.reshape(4, 2) * ratio)
+
+#warped = cv2.cvtColor(warped, cv2.COLOR_BG2GRAY)
+#T = threshold_local(warped, 11, offset = 10, method = "gaussian")
+#warped = (warped > T).astype("uint8") * 255
+
+#print("STEP 3: Apply Perspective Transform")
+#cv2.imshow("Original", imutils.resize(orig, height = 650))
+#cv2.imshow("Scanned", imutils.resize(warped, height = 650))
+#cv2.waitkey(0)
+
     
